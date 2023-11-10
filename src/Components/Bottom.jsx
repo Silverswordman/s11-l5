@@ -8,7 +8,7 @@ import Repeat from "../Assets/playerbuttons/repeat.png";
 
 const BottomNavbar = () => {
   const styleButton = {
-    width: "25px",
+    width: "20px",
   };
   return (
     <Container fluid className="fixed-bottom bg-container pt-1">
@@ -16,24 +16,49 @@ const BottomNavbar = () => {
         <Col lg={10} className="offset-lg-2">
           <Row className="h-100 flex-column justify-content-center align-items-center">
             <Col md={4} className="col-6 playerControls">
-              <div className="d-flex">
+              <div className="d-flex justify-content-between ">
                 <div href="#">
-                  <img src={Shuffle} alt="shuffle" style={styleButton} />
+                  <img
+                    src={Shuffle}
+                    alt="shuffle"
+                    style={styleButton}
+                    className="opacity-75"
+                  />
                 </div>
                 <div href="#">
-                  <img src={Prev} alt="prev" style={styleButton} />
+                  <img
+                    src={Prev}
+                    alt="prev"
+                    style={styleButton}
+                    className="opacity-75"
+                  />
                 </div>
                 <div href="#">
-                  <img src={Play} alt="play" style={styleButton} />
+                  <img
+                    src={Play}
+                    alt="play"
+                    style={styleButton}
+                    className="opacity-75"
+                  />
                 </div>
                 <div href="#">
-                  <img src={Next} alt="next" style={styleButton} />
+                  <img
+                    src={Next}
+                    alt="next"
+                    style={styleButton}
+                    className="opacity-75"
+                  />
                 </div>
                 <div href="#">
-                  <img src={Repeat} alt="repeat" style={styleButton} />
+                  <img
+                    src={Repeat}
+                    alt="repeat"
+                    style={styleButton}
+                    className="opacity-75"
+                  />
                 </div>
               </div>
-              <div className="progress mt-3">
+              <div className="progress mt-3 opacity-75">
                 <div role="progressbar"></div>
               </div>
             </Col>

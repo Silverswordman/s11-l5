@@ -11,7 +11,7 @@ import { useDispatch, useSelector } from "react-redux";
 import searching from "../redux/action/index";
 
 function Sidebar() {
-  const searchValue = useSelector((state) => state.search.searcValue);
+  const searchValue = useSelector((state) => state.search.searchValue);
   const dispatch = useDispatch();
   const handleSearch = (e) => {
     e.preventDefault();
