@@ -1,3 +1,7 @@
+import { fetchRockSuccess } from "../action/index";
+import { fetchPopSuccess } from "../action/index";
+import { fetchHipHopSuccess } from "../action/index";
+
 const initialState = {
   rockSongs: [],
   popSongs: [],
@@ -6,17 +10,17 @@ const initialState = {
 
 const musicReducer = (state = initialState, action) => {
   switch (action.type) {
-    case "FETCH_ROCK_SUCCESS":
+    case fetchRockSuccess:
       return {
         ...state,
         rockSongs: action.payload,
       };
-    case "FETCH_POP_SUCCESS":
+    case fetchPopSuccess:
       return {
         ...state,
         popSongs: action.payload,
       };
-    case "FETCH_HIPHOP_SUCCESS":
+    case fetchHipHopSuccess:
       return {
         ...state,
         hiphopSongs: action.payload,

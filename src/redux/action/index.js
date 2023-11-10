@@ -1,16 +1,16 @@
 import CardAlbum from "../../Components/CardAlbum";
 
-const fetchRockSuccess = (data) => ({
+export const fetchRockSuccess = (data) => ({
   type: "FETCH_ROCK_SUCCESS",
   payload: data,
 });
 
-const fetchPopSuccess = (data) => ({
+export const fetchPopSuccess = (data) => ({
   type: "FETCH_POP_SUCCESS",
   payload: data,
 });
 
-const fetchHipHopSuccess = (data) => ({
+export const fetchHipHopSuccess = (data) => ({
   type: "FETCH_HIPHOP_SUCCESS",
   payload: data,
 });
@@ -68,8 +68,6 @@ export const handleSection = (genre) => {
     }
   };
 };
-
-
 
 const searching = (searchValue) => {
   return async (dispatch) => {
