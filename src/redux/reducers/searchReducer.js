@@ -7,7 +7,7 @@ const searchReducer = (state = initialState, action) => {
     case SetSearch:
       return {
         ...state,
-        searcValue: action.payload,
+        searchValue: action.payload,
       };
     default:
       return state;

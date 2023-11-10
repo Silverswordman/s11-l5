@@ -69,6 +69,8 @@ export const handleSection = (genre) => {
   };
 };
 
+
+
 const searching = (searchValue) => {
   return async (dispatch) => {
     try {

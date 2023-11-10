@@ -56,7 +56,7 @@ function Sidebar() {
                       placeholder="Search"
                       aria-label="Search"
                       aria-describedby="basic-addon2"
-                      onChange={(e) => dispatch(searching.e.target.value)}
+                      onChange={(e) => dispatch(searching(e.target.value))}
                     />
                     <Button
                       variant="outline-secondary"
